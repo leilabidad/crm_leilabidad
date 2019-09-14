@@ -3,9 +3,9 @@ if(isset($_POST['logout'])) {
     session_destroy();
     }
 /*
-Plugin Name: مدیریت ارتباط با مشتریان یارامین
-Plugin URI: https://yaramin.ir
-Description: این پلاگین مختص سایت فروشگاهی yaramin.ir می باشد.
+Plugin Name: مدیریت ارتباط با مشتریان لیلا بیداد
+Plugin URI: https://leilabidad.ir
+Description: این پلاگین مختص سایت فروشگاهی leilabidad.ir می باشد.
 Version: 1.0
 Author: لیلا بیداد
 */
@@ -25,7 +25,7 @@ return($auth_1);
 	if(isset($_POST['edit'])){
 	global $wpdb;
 	global $msg_CRM;
-$table_crm = $wpdb->prefix . "yaramin_crm";
+$table_crm = $wpdb->prefix . "leilabidad_crm";
 	$wpdb->update( $table_crm,
 
   array(
@@ -89,9 +89,9 @@ class CRMs_List extends WP_List_Table {
 	 
 
 	 
-	public static function get_yaramin_crm( $per_page = 25, $page_number = 1 ) {
+	public static function get_leilabidad_crm( $per_page = 25, $page_number = 1 ) {
 		global $wpdb;
-		$sql = "SELECT * FROM {$wpdb->prefix}yaramin_crm";
+		$sql = "SELECT * FROM {$wpdb->prefix}leilabidad_crm";
 		
 		if(($_GET['from']) &&  ($_GET['to']) ) {
 		
