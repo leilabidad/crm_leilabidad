@@ -7,7 +7,7 @@ Plugin Name: مدیریت ارتباط با مشتریان لیلا بیداد
 Plugin URI: https://leilabidad.ir
 Description: این پلاگین مختص سایت فروشگاهی leilabidad.ir می باشد.
 Version: 1.0
-Author: لیلا بیداد
+Author: لیلا بیداد - LEILA BIDAD
 */
 
  function authh($userid_1,$pst_pass){
